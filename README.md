@@ -37,13 +37,21 @@ M-x all-the-icons-install-fonts RET
 
 To make emacs feel more modern several tweaks have been made, first `which-key`, which key recognises partially typed commands and shows possible endings for them. Second a file tree like VsCode, this can be accessed by pressing `f8` or `Cmd+b`.
 
-## Supported Languages
+| Shortcut | Effect |
 
-* C - Full language sever support, completions, err check, jump to def...
-![Python Snippets](/c.gif)
-* Go - Full language sever support, completions, err check, imports and formating ...
-* Python - Full langux1age sever support, identical to VsCode
+## Supported Languages
+Out of the box this config supports man languages
+### C  
+Full language sever support, completions, err check, jump to def...
+![C Snippets](/c.gif)
+### Go 
+ Full language sever support, completions, err check, imports and formating ...
+### Python 
+Full langux1age sever support, identical to VsCode
 ![Python Snippets](/py.gif)
-* Kotlin - Full autocomplete and Error checking
-  - XML is also supported as part of kotlin with tag rename and code folding
-* Haskell - Very minor support with just haskell mode
+### Kotlin 
+Full autocomplete and Error checking
+#### XML 
+XML is also supported as part of kotlin with tag rename and code folding
+### Haskell  
+Very minor support with just haskell mode
