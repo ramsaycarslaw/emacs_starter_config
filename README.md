@@ -13,7 +13,7 @@ brew install go
 go get  golang.org/x/tools/gopls
 ```
 
-The other more obvious requirement is Emacs which can be found at [http://emacsformacosx.com](this website). Dowload version 27.1 for the best results.
+The other more obvious requirement is Emacs which can be found at [this website](http://emacsformacosx.com). Dowload version 27.1 for the best results.
 
 ## Setup 
 
@@ -33,3 +33,7 @@ M-x all-the-icons-install-fonts RET
 ## Usage
 
 To make emacs feel more modern several tweaks have been made, first `which-key`, which key recognises partially typed commands and shows possible endings for them. Second a file tree like VsCode, this can be accessed by pressing `f8` or `Cmd+b`.
+
+## Supported Languages
+
+Currently, only C, Go and Python are supported, I intend to add more languages later.
