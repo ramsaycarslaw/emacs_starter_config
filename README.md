@@ -42,6 +42,7 @@ To make emacs feel more modern several tweaks have been made, first `which-key`,
 * C - Full language sever support, completions, err check, jump to def...
 * Go - Full language sever support, completions, err check, imports and formating ...
 * Python - Full language sever support, identical to VsCode
+![Python Snippets](/py.gif)
 * Kotlin - Full autocomplete and Error checking
   - XML is also supported as part of kotlin with tag rename and code folding
 * Haskell - Very minor support with just haskell mode

@@ -75,10 +75,8 @@ Not on SSL."))
 ;; icons used in the modeline
 (use-package all-the-icons
   :ensure t
-  :config
-    ;; Uncomment theis line if icons break
-  ;; (all-the-icons-install-fonts t)
-  )
+  :init
+  (all-the-icons-install-fonts t))
 
 ;; make the modeline look more modern
 (use-package doom-modeline
@@ -313,7 +311,7 @@ Not on SSL."))
   :hook (python-mode . lsp-deferred))
 
 ;; ------------------------------------------------------------
-;;                             Kotlin
+;; |                     Kotlin
 ;; ------------------------------------------------------------
 
 (use-package kotlin-mode
