@@ -168,7 +168,9 @@ Not on SSL."))
   (which-key-mode))
 
 (use-package flycheck
-  :ensure t)
+  :ensure t
+  :config
+  (global-set-key [f9] 'flycheck-list-errors))
 
 (use-package lsp-mode
   :ensure t
@@ -327,6 +329,14 @@ Not on SSL."))
 ;; given that JetBrains don't maintain an emacs language sever
 ;; try this article on using emacs as an external editor
 ;; https://blog.developer.atlassian.com/emacs-intellij/
+
+;; ------------------------------------------------------------
+;;                          Haskell
+;; ------------------------------------------------------------
+
+(use-package haskell-mode
+  :ensure t
+  :demand t)
 
 ;; ------------------------------------------------------------
 ;;                         XML Editing

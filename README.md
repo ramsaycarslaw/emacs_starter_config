@@ -44,3 +44,4 @@ To make emacs feel more modern several tweaks have been made, first `which-key`,
 * Python - Full language sever support, identical to VsCode
 * Kotlin - Full autocomplete and Error checking
   - XML is also supported as part of kotlin with tag rename and code folding
+* Haskell - Very minor support with just haskell mode
