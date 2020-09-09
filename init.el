@@ -309,6 +309,7 @@ Not on SSL."))
   :ensure t
   :demand
   :init (setq lsp-python-ms-auto-install-server t)
+  :config (setq python-shell-interpreter "python3")
   :hook (python-mode . lsp-deferred))
 
 ;; ------------------------------------------------------------
