@@ -303,16 +303,11 @@ Not on SSL."))
 ;;                      Python
 ;; ------------------------------------------------------------
 
-(use-package elpy
+(use-package lsp-python-ms
   :ensure t
-  :init
-  (elpy-enable))
-
-(use-package py-autopep8
-  :defer t
-  :ensure t
-  :init
-  (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save))
+  :demand
+  :init (setq lsp-python-ms-auto-install-server t)
+  :hook (python-mode . lsp-deferred))
 
 ;; ------------------------------------------------------------
 ;;                             Kotlin

@@ -1,5 +1,7 @@
 # Emacs Starter Config
 
+Emacs for the 21st century
+
 ![The Final Product](/emacs.png)
 
 ## Requirements
@@ -39,6 +41,6 @@ To make emacs feel more modern several tweaks have been made, first `which-key`,
 
 * C - Full language sever support, completions, err check, jump to def...
 * Go - Full language sever support, completions, err check, imports and formating ...
-* Python - Full autocomplete and format support
+* Python - Full language sever support, identical to VsCode
 * Kotlin - Full autocomplete and Error checking
   - XML is also supported as part of kotlin with tag rename and code folding
