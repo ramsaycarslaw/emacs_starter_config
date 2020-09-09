@@ -54,6 +54,7 @@ The Go binding features:
 * Intelligent completions
 * Auto formatting and imports
 * Compile project bound to `M-,`
+![Go Screenshot](/go.png)
 ### Python 
 Full langux1age sever support, identical to VsCode
 ![Python Snippets](/py.gif)
