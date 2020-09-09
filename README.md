@@ -1,6 +1,6 @@
 # Emacs Starter Config
 
-Emacs for the 21st century
+> Emacs for the 21st century
 
 ![The Final Product](/emacs.png)
 
@@ -37,7 +37,11 @@ M-x all-the-icons-install-fonts RET
 
 To make emacs feel more modern several tweaks have been made, first `which-key`, which key recognises partially typed commands and shows possible endings for them. Second a file tree like VsCode, this can be accessed by pressing `f8` or `Cmd+b`.
 
-| Shortcut | Effect |
+| Shortcut | Effect                |
+| :--------| --------------------: |
+| Cmd + B  | Open File Tree        |
+| Cmd + F  | Find (helm-find-file) |
+| M-,      | Go build package      |
 
 ## Supported Languages
 Out of the box this config supports man languages
@@ -45,7 +49,11 @@ Out of the box this config supports man languages
 Full language sever support, completions, err check, jump to def...
 ![C Snippets](/c.gif)
 ### Go 
- Full language sever support, completions, err check, imports and formating ...
+The Go binding features:
+* A go language sever
+* Intelligent completions
+* Auto formatting and imports
+* Compile project bound to `M-,`
 ### Python 
 Full langux1age sever support, identical to VsCode
 ![Python Snippets](/py.gif)
