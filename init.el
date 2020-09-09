@@ -43,6 +43,9 @@ Not on SSL."))
   ;; never type in yes or no only y or n
   (fset 'yes-or-no-p 'y-or-n-p)
 
+  ;; display time ? comment this out to remove the time from the modeline
+  (display-time)
+
   ;; complete brackets and so on
   (add-hook 'prog-mode-hook 'electric-pair-mode)
 
@@ -58,6 +61,12 @@ Not on SSL."))
 
 (use-package menu-bar
   :init (menu-bar-mode 1))
+
+;; fix emacs shell intergrtion
+(use-package exec-path-from-shell
+  :ensure t
+  :config (when (memq window-system '(mac ns x))
+	    (exec-path-from-shell-initialize)))
 
 ;; ------------------------------------------------------------
 ;;                       Themes
@@ -325,16 +334,20 @@ Not on SSL."))
 ;; https://blog.developer.atlassian.com/emacs-intellij/
 
 ;; ------------------------------------------------------------
-;;                     startup
+;;                         XML Editing
 ;; ------------------------------------------------------------
 
-(use-package dashboard
+;; Added an XML config for andriod studion stuff
+(use-package auto-rename-tag
   :ensure t
-  :config (dashboard-setup-startup-hook)
-  (setq dashboard-startup-banner 'logo)
-  (setq dashboard-center-content t)
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t))
+  :hook (nxml-mode . auto-rename-tag-mode)
+  (html-mode . auto-rename-tag-mode))
+
+;; hit tab on the < of a tag to fold it
+(use-package noxml-fold
+  :ensure t
+  :hook (nxml-mode . noxml-fold-mode))
+
 
 ;; ------------------------------------------------------------
 ;;                        File Tree & Tabs
