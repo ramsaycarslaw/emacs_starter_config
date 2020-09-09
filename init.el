@@ -325,6 +325,7 @@ Not on SSL."))
 (use-package neotree
   :ensure t
   :config
+  (setq neo-smart-open t)
   (global-set-key [f8] 'neotree-toggle)
   (global-set-key (kbd "s-b") 'neotree-toggle)
   (setq neo-theme (if (display-graphic-p) 'icons 'arrow)))

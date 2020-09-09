@@ -1,5 +1,7 @@
 # Emacs Starter Config
 
+![The Final Product](/emacs.png)
+
 ## Requirements
 
 There are two main requirements to this emacs config, the two language severs used to power the Go and C completion, they can be installed as such:
