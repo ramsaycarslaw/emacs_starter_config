@@ -207,7 +207,6 @@ Not on SSL."))
   :commands company-lsp
   :config
   (push 'company-lsp company-backends)
-
   (setq company-transformers nil
         company-lsp-async t
         company-lsp-cache-candidates nil))
@@ -305,6 +304,25 @@ Not on SSL."))
   :ensure t
   :init
   (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save))
+
+;; ------------------------------------------------------------
+;;                             Kotlin
+;; ------------------------------------------------------------
+
+(use-package kotlin-mode
+  :ensure t
+  :hook (kotlin-mode . company-mode)
+  (kotlin-mode . flycheck-mode))
+
+(use-package flycheck-kotlin
+  :ensure t
+  :after flycheck
+  :config
+  (flycheck-kotlin-setup))
+
+;; given that JetBrains don't maintain an emacs language sever
+;; try this article on using emacs as an external editor
+;; https://blog.developer.atlassian.com/emacs-intellij/
 
 ;; ------------------------------------------------------------
 ;;                     startup

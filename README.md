@@ -9,6 +9,7 @@ There are two main requirements to this emacs config, the two language severs us
 ```bash:
 brew update
 brew install ccls
+brew install ktlint
 brew install go
 go get  golang.org/x/tools/gopls
 ```
@@ -36,4 +37,7 @@ To make emacs feel more modern several tweaks have been made, first `which-key`,
 
 ## Supported Languages
 
-Currently, only C, Go and Python are supported, I intend to add more languages later.
+* C - Full language sever support, completions, err check, jump to def...
+* Go - Full language sever support, completions, err check, imports and formating ...
+* Python - Full autocomplete and format support
+* Kotlin - Full autocomplete and Error checking
